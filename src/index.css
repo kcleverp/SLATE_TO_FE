@@ -1,4 +1,94 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
 @import 'tailwindcss';
 
 @theme {
+  /* Font */
+  --font-sans: 'Pretendard', sans-serif;
+
+  --font-size-head-lg: 32px;
+  --font-size-head-md: 28px;
+  --font-size-head-sm: 20px;
+  --font-size-body-lg: 20px;
+  --font-size-body-sm: 16px;
+  --font-size-caption-lg: 14px;
+  --font-size-caption-sm: 12px;
+
+  /* Primitive - Main */
+  --color-main-1: #edf4ff;
+  --color-main-2: #d7e7ff;
+  --color-main-3: #b9d6ff;
+  --color-main-4: #88bdff;
+  --color-main-5: #509aff;
+  --color-main-6: #2874ff;
+  --color-main-7: #1457ff;
+  --color-main-8: #0a3feb;
+  --color-main-9: #0f33be;
+  --color-main-10: #133195;
+  --color-main-11: #11205a;
+
+  /* Primitive - Sub */
+  --color-sub-1: #edf4ff;
+  --color-sub-2: #d7e7ff;
+  --color-sub-3: #b9d6ff;
+  --color-sub-4: #88bdff;
+  --color-sub-5: #509aff;
+  --color-sub-6: #2874ff;
+  --color-sub-7: #1457ff;
+  --color-sub-8: #0a3feb;
+  --color-sub-9: #0f33be;
+  --color-sub-10: #133195;
+  --color-sub-11: #11205a;
+
+  /* Primitive - Neutral */
+  --color-neutral-1: #f8fafc;
+  --color-neutral-2: #f1f5f9;
+  --color-neutral-3: #e2e8f0;
+  --color-neutral-4: #cbd5e1;
+  --color-neutral-5: #94a3b8;
+  --color-neutral-6: #64748b;
+  --color-neutral-7: #64748b;
+  --color-neutral-8: #475569;
+  --color-neutral-9: #334155;
+  --color-neutral-10: #1e293b;
+  --color-neutral-11: #0f172a;
+
+  /* Semantic - Primary */
+  --color-primary: var(--color-main-7);
+  --color-primary-hover: var(--color-main-8);
+  --color-primary-light: var(--color-main-4);
+
+  /* Semantic - Secondary */
+  --color-secondary: var(--color-sub-7);
+  --color-secondary-hover: var(--color-sub-8);
+  --color-secondary-light: var(--color-sub-4);
+
+  /* Background */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #fafbff;
+
+  /* Border */
+  --color-border: #afafaf;
+
+  /* Gradation */
+  --color-gradation: #a9ccf4;
+
+  /* Semantic - Success */
+  --color-success-light: #dcfce7;
+  --color-success: #22c55e;
+  --color-success-dark: #166534;
+
+  /* Semantic - Caution */
+  --color-caution-light: #fffbe6;
+  --color-caution: #ffb800;
+  --color-caution-dark: #92400e;
+
+  /* Semantic - Info */
+  --color-info-light: #e0f2fe;
+  --color-info: #0ea5e9;
+  --color-info-dark: #0ea5e9;
+
+  /* Semantic - Warning */
+  --color-warning-light: #ffebee;
+  --color-warning: #ff4d4f;
+  --color-warning-dark: #991b1b;
 }

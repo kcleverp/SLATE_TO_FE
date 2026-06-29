@@ -58,12 +58,22 @@ SLATE_TO_FE/
 ```
 main        # 배포 브랜치
 └── dev     # 통합 브랜치
-    └── feature/기능명   # 기능 개발 브랜치
+    └── feature/이름-기능명   # 기능 개발 브랜치 (예: feature/kcleverp-login)
 ```
 
-- 모든 작업은 `feature/` 브랜치에서 시작
-- `feature` → `dev` PR 후 코드 리뷰 필수
+- 모든 작업은 `feature/이름-기능명` 브랜치에서 시작
+- `feature` → `dev` PR 후 팀장 코드 리뷰 필수
+- dev merge 후 통합 테스트 진행
 - `dev` → `main` 은 배포 시점에만 병합
+- 모든 변경사항은 GitHub 이슈로 기록
+
+## 네이밍 규칙
+
+| 대상 | 규칙 | 예시 |
+| --- | --- | --- |
+| 컴포넌트 파일/폴더 | PascalCase | `VideoPlayer.tsx` |
+| 함수 / 변수 / 커스텀 훅 | camelCase | `isLoggedIn`, `useAuth.ts` |
+| 레포지토리 / 브랜치 | kebab-case | `slate-to-fe`, `feature/kcleverp-login` |
 
 ## 커밋 컨벤션
 
@@ -97,6 +107,21 @@ feat: 로그인 페이지 UI 구현 (#12)
 - UI 변경이 있으면 스크린샷 첨부
 - 리뷰 포인트가 있으면 본문에 작성
 - PR 본문은 [템플릿](.github/PULL_REQUEST_TEMPLATE.md)을 따릅니다
+
+## 스타일 가이드
+
+폰트와 색상은 `src/index.css`의 `@theme`에 CSS 변수로 정의되어 있습니다.
+
+**폰트**: Pretendard
+
+크기와 굵기를 조합해서 사용합니다.
+- 크기: `text-head-lg` / `text-head-md` / `text-head-sm` / `text-body-lg` / `text-body-sm` / `text-caption-lg` / `text-caption-sm`
+- 굵기: `font-bold` / `font-semibold` / `font-normal`
+
+**색상**
+- **Primitive** — 디자인 시스템 원본 팔레트 (`bg-main-7`, `text-neutral-6` 등)
+- **Semantic** — 용도 기반 별칭으로 Primitive를 참조 (`bg-primary`, `bg-secondary` 등)
+- 가능하면 Semantic 우선 사용, 없는 경우 Primitive 직접 사용
 
 ## 실행 방법
 
