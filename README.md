@@ -12,7 +12,7 @@ SLATE-TO는 영상 제작자들이 구인구직, 프로젝트 관리, 팀 협업
 | ------ | ----------------------------------------------------- | -------------------------------------------------------------------------- |
 | 클레버 | 워크스페이스 · 프로젝트 상세 (영상 피드백)            | TextArea · YouTube Iframe Player · Select · Choice · ActionMenu            |
 | 디아   | 로그인 / 인증 (토큰 · 소셜 · 라우팅 가드)             | Input · 프로젝트 카드 · 영상 미리보기 · Tag · FileInput                    |
-| 이브   | 온보딩 · 홈 · 캘린더 · 알림                           | Button · Calendar(라이브러리) · Avatar · DatePicker                         |
+| 이브   | 온보딩 · 홈 · 캘린더 · 알림                           | Button · Calendar(라이브러리) · Avatar · DatePicker                        |
 | 재희   | 레이아웃 (골격) · 구인구직 · 마이페이지 · 전역 스타일 | ProgressBar · 구인구직 카드 · Modal(껍데기+ConfirmModal) · Tabs · 레이아웃 |
 
 ## 기술 스택
